@@ -1,0 +1,48 @@
+{
+    "member_identity" : {
+        "Megumin": {
+            "name" : "Megumin",
+            "id" : "client",
+            "role" : "Server",
+            "color" : "16724787"
+        },
+
+        "XaxoriJoey" : {
+            "name": "XaxoriJoey",
+            "id": "745278593944387605",
+            "role": "Developer",
+            "color": "16711729"
+        },
+        "shrimp" : {
+            "name" : "shrimp",
+            "id": "690050777892520067",
+            "role": "Architech",
+            "color": "16741120"
+        },
+        "meow" : {
+            "name" : "meow",
+            "id": "762630055976763403",
+            "role": "Programmer",
+            "color" : "32255"
+        },
+        "kyouyo" : {
+            "name" : "kyouyo",
+            "id": "496558884157128714",
+            "role": "Programmer",
+            "color" : "32255"
+        },
+        "cornbits" : {
+            "name" : "cornbits",
+            "id": "757489983685787709",
+            "role": "Designer",
+            "color" : "14988288"
+        }
+    },
+
+    "category" : {
+        "channel" : {
+            "experimental" : "791999722394877964",
+            "general-lobby" : "789856966255706134"
+        }
+    }
+}
