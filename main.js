@@ -1,8 +1,3 @@
-/*  BOT PERMISSIONS              https://discordapi.com/permissions.html
-    MEGUMIN CONFIGURE PORTAL     https://discord.com/developers/applications
-    MEGUMIN AUTHORIZATION        https://discord.com/oauth2/authorize?client_id=791926816599179284&scope=bot&permissions=2147483647
-*/ 
-
 "use strict"
 const keep_alive = require('./keep_alive.js')
 const Discord = require('discord.js');                              // import the discord.js module
@@ -13,7 +8,6 @@ const { Client, MessageEmbed } = require('discord.js');             // extract e
 const client = new Client();                                        // create instance of new Discord client
 const embed = new MessageEmbed();                                   // create instance of new MessageEmbeds
 const token = process.env.DISCORD_BOT_SECRET;
-
 
 // when the client is ready, run this code
 // this event will only trigger one time after logging in
@@ -66,7 +60,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
         // Your specific channel to send a message in.
         // You can also use member.guild.channels.resolve('');
         
-        const channel = member.guild.channels.cache.get(category.channel['experimental']);
+        const channel = member.guild.channels.cache.get(category.channel['general-lobby']);
             
         // User id of the user you're tracking status.
         if (member.id === member_identity.XaxoriJoey.id) {
@@ -78,6 +72,11 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
         else if (member.id === member_identity.shrimp.id) {
             embed.setColor(16741120);
             channel.send(statusListner(member_identity.shrimp.role, member_identity.shrimp.name));
+        }
+
+        else if (member.id === member_identity.CorpseLJ.id) {
+            embed.setColor(16741120);
+            channel.send(statusListner(member_identity.CorpseLJ.role, member_identity.CorpseLJ.name));
         }
 
         // User id of the user you're tracking status.
