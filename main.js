@@ -4,13 +4,16 @@
 */ 
 
 "use strict"
+const keep_alive = require('./keep_alive.js')
 const Discord = require('discord.js');                              // import the discord.js module
-const { prefix, token } = require('./config.json');                 // import the config module
+const prefix = "$"; // set default command prefix                   // import the config module 
 const { member_identity, category } = require('./database.json');   // import the database module
 
 const { Client, MessageEmbed } = require('discord.js');             // extract elements of Discord client
 const client = new Client();                                        // create instance of new Discord client
 const embed = new MessageEmbed();                                   // create instance of new MessageEmbeds
+const token = process.env.DISCORD_BOT_SECRET;
+
 
 // when the client is ready, run this code
 // this event will only trigger one time after logging in
